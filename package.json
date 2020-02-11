@@ -9,8 +9,8 @@
   "scripts": {
     "test": "jest --watch",
     "coverage": "jest --coverage",
-    "start": "node src/server.js",
-    "dev": "nodemon"
+    "start" : "node src/server.js",
+    "dev" : "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
