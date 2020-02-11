@@ -8,7 +8,7 @@ const router = (req, res) => {
     fs.readFile(filePath, (err, file) => {
       if (err) {
         res.writeHead(500, { 'Content-Type': 'text/html' });
-        res.end('<h1> Error 500: Not Found! </h1>');
+        res.end('<h1> Error 500: Internal Server Error! </h1>');
       } else {
         res.writeHead(200, { 'Content-Type': 'text/html' });
         res.end(file);
