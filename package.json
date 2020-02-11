@@ -1,5 +1,5 @@
 {
-  "name": "Rest-Countries",
+  "name": "rest-countries",
   "version": "1.0.0",
   "description": "Code Academy Week 4 project",
   "main": "index.js",
@@ -7,7 +7,10 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watch",
+    "coverage": "jest --coverage",
+    "start" : "node src/server.js",
+    "dev" : "nodemon"
   },
   "repository": {
     "type": "git",
