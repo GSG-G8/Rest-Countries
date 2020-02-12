@@ -1,5 +1,4 @@
-
-module.exports = (url, callback) => {
+const apiFunction = (url, callback) => {
   const xhr = new XMLHttpRequest();
   xhr.onreadystatechange = () => {
     if (xhr.readyState === 4) {
