@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-const filterByName = require('../public/scripts/logic');
+const data = require('../public/scripts/logic');
 
 const arr = ['Afghanistan',
   'Åland Islands',
@@ -35,25 +35,25 @@ const arr = ['Afghanistan',
   'Brazil'];
 
 test('should return Belgium', () => {
-  expect(filterByName(arr, 'belgium')).toEqual(['Belgium']);
+  expect(data(arr, 'belgium')).toEqual(['Belgium']);
 });
 
 test('should return Argentina, Armenia, Aruba', () => {
-  expect(filterByName(arr, 'ar')).toEqual(['Argentina', 'Armenia', 'Aruba']);
+  expect(data(arr, 'ar')).toEqual(['Argentina', 'Armenia', 'Aruba']);
 });
 
 test('should return Bahamas, Bahrain', () => {
-  expect(filterByName(arr, 'bah')).toEqual(['Bahamas', 'Bahrain']);
+  expect(data(arr, 'bah')).toEqual(['Bahamas', 'Bahrain']);
 });
 
 test('should return Angola', () => {
-  expect(filterByName(arr, 'ango')).toEqual(['Angola']);
+  expect(data(arr, 'ango')).toEqual(['Angola']);
 });
 
 test('should return Angola and Anguilla', () => {
-  expect(filterByName(arr, 'ang')).toEqual(['Angola', 'Anguilla']);
+  expect(data(arr, 'ang')).toEqual(['Angola', 'Anguilla']);
 });
 
 test('should return Anguilla', () => {
-  expect(filterByName(arr, 'Anguilla')).toEqual(['Anguilla']);
+  expect(data(arr, 'Anguilla')).toEqual(['Anguilla']);
 });
