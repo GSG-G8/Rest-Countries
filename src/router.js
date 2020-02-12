@@ -5,6 +5,8 @@ const router = (req, res) => {
   const endpoint = req.url;
   if (endpoint === '/') {
     indexHandler.homeHandler(req, res);
+  } else if (endpoint === '/countries') {
+    indexHandler.apiHandler(req, res);
   } else if (endpoint.includes('public')) {
     indexHandler.staticHandler(req, res);
   } else {
