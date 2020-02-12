@@ -6,6 +6,8 @@ const countriesNameUrl = '/countries';
 let countriesInfoUrl;
 
 
+
+
 const insertedCountry = (e) => {
   apiFunction(countriesNameUrl, (res) => {
     while (countryList.firstChild) countryList.removeChild(countryList.firstChild);
