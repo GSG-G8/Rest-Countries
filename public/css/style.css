@@ -22,12 +22,12 @@
     padding: 5px;
   color: #c18236;   
  }
- #country__form{
+ .country__form{
     padding: 5px;
     color:#090927;
     font-size: 1.2rem;
  }
- #search__country{
+ .search__country{
     padding: 5px;
     color:#090927;
     font-size: 1.2rem;
