@@ -1,4 +1,5 @@
 const homeHandler = require('./handlers/homeHandler');
+const apiHandler = require('./handlers/apiHandler');
 const staticHandler = require('./handlers/staticHandler');
 
 
@@ -6,6 +7,8 @@ const router = (req, res) => {
   const endpoint = req.url;
   if (endpoint === '/') {
     homeHandler(req, res);
+  } else if (endpoint === '/countries') {
+    apiHandler(req, res);
   } else if (endpoint.includes('public')) {
     staticHandler(req, res);
   } else {
