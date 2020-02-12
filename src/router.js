@@ -2,9 +2,7 @@ const homeHandler = require('./handlers/homeHandler');
 
 const router = (req, res) => {
   const endpoint = req.url;
-  if (endpoint === '/') {
-    homeHandler(req, res);
-  } else if (endpoint === '/index') {
+  if (endpoint === '/' || endpoint === 'index') {
     homeHandler(req, res);
   } else {
     res.writeHead(404, { 'Content-Type': 'text/html' });
