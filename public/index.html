@@ -11,25 +11,32 @@
     <main>
       <div class="main__div">
         <div class="Rest__Country">
-         <h1 class="search__heading1"> Countries And Capitals</h1>
-         <h3 class="search__heading3"> Search for informaion about your country</h3>
-          <form class="country__form" action="/posts" method="post" id="country__form">
-            <label for="search__country">Country Name:</label>
-            <input
-              type="text"
-              id="search__country"
-              name="search"
-              placeholder="Search for Countries"
-              class="search__country"
-              autocomplete="off"
-            />
-            <button  class="form__btn" type="submit">Send</button>
-          </form>
-          <div class="country__list">
+          <h1 class="search__heading1">Countries of the World</h1>
+          <h3 class="search__heading3">
+            Check information on the you are curious to know about!
+          </h3>
+          <div class="Rest__Country__Search">
+            <form
+              class="country__form"
+              action="/posts"
+              method="post"
+              id="country__form"
+            >
+              <label for="search__country" class="form__label"
+                >Search by country name</label
+              >
+              <input
+                type="text"
+                id="search__country"
+                name="search"
+                placeholder="Search by country name"
+                class="search__country"
+              />
+              <button class="form__btn" type="submit">Search</button>
+            </form>
+            <div class="country__list"></div>
           </div>
-
-          <div class="country__info">
-          </div>
+          <div class="country__info"></div>
         </div>
       </div>
     </main>

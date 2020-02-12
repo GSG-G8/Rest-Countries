@@ -1,44 +1,84 @@
-*{
- margin: 0;
- }
- .main__div{
-     background-image:linear-gradient(rgba(211, 109, 109, 0.1),
-      rgba(252, 244, 244, 0.1)),url('../images/bg.jpg') ;
-     height: 100vh;
-     background-size: cover;
-     margin: 0 auto;
-   }
- .Rest__Country{
-     padding-top: 5%;
-     text-align: center;
-     font-size: 1rem;
-    
- }
- .search__heading1{
-     padding: 5px;
-    color:#090927;
- }
- .search__heading3{
-    padding: 5px;
-  color: #c18236;   
- }
- .country__form{
-    padding: 5px;
-    color:#090927;
-    font-size: 1.2rem;
- }
- .search__country{
-    padding: 5px;
-    color:#090927;
-    font-size: 1.2rem;
- }
-.form__btn{
-    color:#090927;
-    font-size: 1.2rem;
-    color: blue;
-    background-color: white;
+* {
+  margin: 0;
 }
-.form__btn:hover{
-    color:blueviolet;
-    background-color: rgba(50, 50, 139,.2);
+.main__div {
+  background-image: linear-gradient(
+      rgba(211, 109, 109, 0.1),
+      rgba(252, 244, 244, 0.1)
+    ),
+    url("../images/bg.jpg");
+  height: 100vh;
+  background-size: 100vw 100vh;
+}
+.Rest__Country {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6rem;
+}
+.search__heading1 {
+  margin: 1rem 0;
+  padding: 5px;
+  color: #090927;
+  font-size: 1.25rem;
+}
+.search__heading3 {
+  margin: 1rem 0;
+  padding: 5px;
+  color: #c18236;
+  font-size: 1.25rem;
+}
+.Rest__Country__Search {
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: white;
+  width: 75%;
+}
+.form__label {
+  position: fixed;
+  right: 5000px;
+}
+.country__form {
+  padding: 5px;
+  color: #090927;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.search__country {
+  border: none;
+  padding: 5px;
+  color: #090927;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  width: 75%;
+}
+.form__btn {
+  padding: 5px;
+  color: #090927;
+  font-size: 1.2rem;
+  color: blue;
+  background-color: white;
+  border-radius: 5px;
+}
+.form__btn:hover {
+  color: blueviolet;
+  background-color: rgba(50, 50, 139, 0.2);
+  cursor: pointer;
+}
+.country__list {
+  align-self: center;
+  padding: 5px;
+}
+.option {
+  cursor: pointer;
+}
+.option:hover {
+  background-color: gray;
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    font-size: 14px;
+  }
 }
