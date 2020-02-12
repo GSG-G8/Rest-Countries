@@ -7,7 +7,6 @@ const filesExtension = {
   js: 'text/js',
   jpg: 'image/jpeg',
   png: 'image/png',
-  ico: 'image/x-icon',
   json: 'application/json',
 };
 
