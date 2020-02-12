@@ -1,0 +1,44 @@
+*{
+ margin: 0;
+ }
+ .main__div{
+     background-image:linear-gradient(rgba(211, 109, 109, 0.1),
+      rgba(252, 244, 244, 0.1)),url('../images/bg.jpg') ;
+     height: 100vh;
+     background-size: cover;
+     margin: 0 auto;
+   }
+ .Rest__Country{
+     padding-top: 5%;
+     text-align: center;
+     font-size: 1rem;
+    
+ }
+ .search__heading1{
+     padding: 5px;
+    color:#090927;
+ }
+ .search__heading3{
+    padding: 5px;
+  color: #c18236;   
+ }
+ #country__form{
+    padding: 5px;
+    color:#090927;
+    font-size: 1.2rem;
+ }
+ #search__country{
+    padding: 5px;
+    color:#090927;
+    font-size: 1.2rem;
+ }
+.form__btn{
+    color:#090927;
+    font-size: 1.2rem;
+    color: blue;
+    background-color: white;
+}
+.form__btn:hover{
+    color:blueviolet;
+    background-color: rgba(50, 50, 139,.2);
+}
