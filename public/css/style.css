@@ -92,26 +92,6 @@
   margin: 0.5rem 0;
   font-weight: 700;
 }
-.capital{
-  font-size: 1.25rem;
-  margin: 0.5rem 0;
-  font-weight: 700;
-}
-.currency{
-  font-size: 1.25rem;
-  margin: 0.5rem 0;
-  font-weight: 700;
-}
-.language{
-  font-size: 1.25rem;
-  margin: 0.5rem 0;
-  font-weight: 700;
-}
-.population{
-  font-size: 1.25rem;
-  margin: 0.5rem 0;
-  font-weight: 700;
-}
 @media only screen and (max-width: 600px) {
   * {
     font-size: 14px;
