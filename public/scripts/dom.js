@@ -7,7 +7,9 @@ let countriesInfoUrl;
 
 const insertedCountry = (e) => {
   apiFunction(countriesNameUrl, (res) => {
-    while (countryList.firstChild) countryList.removeChild(countryList.firstChild);
+    while (countryList.firstChild) {
+      countryList.removeChild(countryList.firstChild);
+    }
     let filteredCountries = filterByName(res.names, e.target.value);
     if (input.value === '') filteredCountries = [];
     filteredCountries.forEach((element) => {
@@ -26,8 +28,10 @@ const insertedCountry = (e) => {
 
 const countryInfo = () => {
   apiFunction(countriesInfoUrl, (res) => {
-    while (countryInfoContainer.firstChild) countryInfoContainer
-      .removeChild(countryInfoContainer.firstChild);
+    while (countryInfoContainer.firstChild) {
+      countryInfoContainer
+        .removeChild(countryInfoContainer.firstChild);
+    }
     const result = {
       'country name': res[0].name, Capital: res[0].capital, currencies: res[0].currencies[0].name, population: res[0].population, languages: res[0].languages[0].name,
     };
