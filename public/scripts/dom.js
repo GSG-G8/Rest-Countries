@@ -7,7 +7,9 @@ let countriesInfoUrl;
 
 const insertedCountry = (e) => {
   apiFunction(countriesNameUrl, (res) => {
-    while (countryList.firstChild) countryList.removeChild(countryList.firstChild);
+    while (countryList.firstChild) {
+      countryList.removeChild(countryList.firstChild);
+    }
     let filteredCountries = filterByName(res.names, e.target.value);
     if (input.value === '') filteredCountries = [];
     filteredCountries.forEach((element) => {
